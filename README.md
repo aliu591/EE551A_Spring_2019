@@ -24,5 +24,6 @@ TODO
 * write the base code for the rules and player operations 
 
 Author
+------
 Ao Liu
 
