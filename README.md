@@ -21,7 +21,9 @@ TODO
 ------
 * Design front-end and back-end interactive interfaces
 * Design the rules of the game
-* write the base code for the rules and player operations 
+* write the base code for the rules and player operations
+* Add some fun functions and idea in the game
+* Optimize the project run speed
 
 Author
 ------
