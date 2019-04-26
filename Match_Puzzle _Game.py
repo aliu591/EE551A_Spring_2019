@@ -1,6 +1,6 @@
 import os
 import pygame
-from utils import *
+from main import *
 from config import *
 
 
