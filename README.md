@@ -8,7 +8,7 @@ This is my EE551 python individual project | Author: Ao Liu
 
 Purposals
 ------
-In this project I will design a very popular game named Match Puzzle Game. In this game, there are seven different animal shapes, players need use mouse to place the giving shapes on board and fullfill a row or columne of three same animal shapes to crush them, when crush the three same shapes, there will create new shapes to fill the eliminated part, and the player will gain 10 score, and the time I set is 100 seconds, when time reach, the game will end and jump to a result screen, the player can choose to restart or quit the game. And I provide a good user experience and a beautiful interface in the game.
+In this project I will design a very popular game named Match Puzzle Game. In this game, there are seven different animal shapes, players need use mouse to place the giving shapes on board, move the shape up, down, left or right to change the location of the shape with the shape near it, and try to fullfill a row or columne of three same animal shapes to crush them, when crush the three same shapes, there will create new shapes to fill the eliminated part, and the player will gain 10 score, and the time I set is 100 seconds, when time reach, the game will end and jump to a result screen, the player can choose to restart or quit the game. And I provide a good user experience and a beautiful interface in the game.
 
 Features
 ------
@@ -32,7 +32,8 @@ TODO
 - Python3.7(have installed necessary dependencies)
 
 # Usage
-- pip install -r requirements.txt
+- need to install the pygame module. 
+- pip install pygame
 - python Match_Puzzle_Game.py
 
 # Packages
