@@ -30,9 +30,9 @@ def main():
 			screen.fill((135, 206, 235))
 			text0 = 'Final score: %s' % score
 			text1 = 'Use <R> to restart the game.'
-			text2 = 'Use <Esc> to quit the game.'
+			text = 'Use <esc> to quit the game.'
 			y = 150
-			for idx, text in enumerate([text0, text1, text2]):
+			for idx, text in enumerate([text0, text1, text]):
 				text_render = font.render(text, 1, (85, 65, 0))
 				rect = text_render.get_rect()
 				if idx == 0:

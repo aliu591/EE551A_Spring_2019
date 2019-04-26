@@ -57,9 +57,9 @@ class makeGame():
 	def start(self):
 		clock = pygame.time.Clock()
 
-		overall_moving = True
+		all_moving = True
 
-		individual_moving = False
+		shape_moving = False
 
 		gem_selected_xy = None
 		gem_selected_xy2 = None
@@ -74,7 +74,7 @@ class makeGame():
 					pygame.quit()
 					sys.exit()
 				elif event.type == pygame.MOUSEBUTTONUP:
-					if (not overall_moving) and (not individual_moving) and (not add_score):
+					if (not all_moving) and (not shape_moving) and (not add_score):
 						position = pygame.mouse.get_pos()
 						if gem_selected_xy is None:
 							gem_selected_xy = self.checkSelected(position)
@@ -82,19 +82,19 @@ class makeGame():
 							gem_selected_xy2 = self.checkSelected(position)
 							if gem_selected_xy2:
 								if self.swapGem(gem_selected_xy, gem_selected_xy2):
-									individual_moving = True
+									shape_moving = True
 									swap_again = False
 								else:
 									gem_selected_xy = None
-			if overall_moving:
-				overall_moving = not self.dropGems(0, 0)
+			if all_moving:
+				all_moving = not self.dropGems(0, 0)
 
-				if not overall_moving:
+				if not all_moving:
 					res_match = self.isMatch()
 					add_score = self.removeMatched(res_match)
 					if add_score > 0:
-						overall_moving = True
-			if individual_moving:
+						all_moving = True
+			if shape_moving:
 				gem1 = self.getGemByPos(*gem_selected_xy)
 				gem2 = self.getGemByPos(*gem_selected_xy2)
 				gem1.move()
@@ -106,8 +106,8 @@ class makeGame():
 						self.swapGem(gem_selected_xy, gem_selected_xy2)
 					else:
 						add_score = self.removeMatched(res_match)
-						overall_moving = True
-						individual_moving = False
+						all_moving = True
+						shape_moving = False
 						gem_selected_xy = None
 						gem_selected_xy2 = None
 			self.screen.fill((135, 206, 235))
