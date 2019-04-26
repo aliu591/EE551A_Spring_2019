@@ -26,6 +26,30 @@ TODO
 * Add some fun functions and idea in the game
 * Optimize the project run speed
 
+# Introduction
+
+
+# Environment(Tested):
+- Mac
+- Python3.7(have installed necessary dependencies)
+
+# Usage
+- pip install -r requirements.txt
+- python Game15.py
+
+# Packages
+- pygame
+- os
+- sys
+- time
+- random
+
+# Reference
+http://inventwithpython.com/pygame
+
+# Game Display
+![giphy](effect/running.gif)
+
 Author
 ------
 Ao Liu
