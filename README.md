@@ -29,7 +29,7 @@ TODO
 
 # Environment:
 - Mac
-- Python3.7(have installed necessary dependencies)
+- Python3.7
 
 # Usage
 - need to install the pygame module. 
