@@ -47,9 +47,6 @@ TODO
 # Reference
 http://inventwithpython.com/pygame
 
-# Game Display
-![giphy](effect/running.gif)
-
 Author
 ------
 Ao Liu
